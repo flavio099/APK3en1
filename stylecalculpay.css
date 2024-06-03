@@ -1,0 +1,65 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding-top: 100px;
+    background-color:rgb(124, 199, 186) ;
+    
+}
+
+.formulaire{
+padding: 20px;
+display: flex; 
+flex-direction: column;   
+gap:10px;
+border: 2px solid white ;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+background-color:rgb(39,44,72);
+
+}
+
+.formulaire_input{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.input{
+    border-radius: 5px;
+    height: 25px;
+    width: 210px;
+    border:1px solid white;
+}
+
+.label{
+    color: cornsilk;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.span{
+    color:red;
+    font-size: 15px;
+}
+
+.btn{
+    color:white;
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid;
+}
