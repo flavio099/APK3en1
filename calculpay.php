@@ -13,12 +13,12 @@ function calculpay($salaire_par_heure, $salaire_sur_le_5jours_de_la_semaine, $sa
     return $resultat;
 }
 
-$salaire_par_heure = isset($_GET['salaire_par_heure']) ? $_GET['salaire_par_heure'] : 0;
-$salaire_sur_le_5jours_de_la_semaine = isset($_GET['salaire_sur_le_5jours_de_la_semaine']) ? $_GET['salaire_sur_le_5jours_de_la_semaine'] : 0;
-$salaire_sur_le_6premieres_heures_du_overtime = isset($_GET['salaire_sur_le_6premieres_heures_du_overtime']) ? $_GET['salaire_sur_le_6premieres_heures_du_overtime'] : 0;
-$salaire_weekend = isset($_GET['salaire_weekend']) ? (float)$_GET['salaire_weekend'] : 0;
-$salaire_dimanche_jourférié = isset($_GET['salaire_dimanche_jour_férié']) ? $_GET['salaire_dimanche_jour_férié'] : 0;
-$nbre_heures = isset($_GET['nbre_heures']) ? $_GET['nbre_heures'] : 0;
+$salaire_par_heure = isset($_POST['salaire_par_heure']) ? $_POST['salaire_par_heure'] : 0;
+$salaire_sur_le_5jours_de_la_semaine = isset($_POST['salaire_sur_le_5jours_de_la_semaine']) ? $_POST['salaire_sur_le_5jours_de_la_semaine'] : 0;
+$salaire_sur_le_6premieres_heures_du_overtime = isset($_POST['salaire_sur_le_6premieres_heures_du_overtime']) ? $_POST['salaire_sur_le_6premieres_heures_du_overtime'] : 0;
+$salaire_weekend = isset($_POST['salaire_weekend']) ? (float)$_POST['salaire_weekend'] : 0;
+$salaire_dimanche_jourférié = isset($_POST['salaire_dimanche_jour_férié']) ? $_POST['salaire_dimanche_jour_férié'] : 0;
+$nbre_heures = isset($_POST['nbre_heures']) ? $_POST['nbre_heures'] : 0;
 
 $solution = calculpay($salaire_par_heure, $salaire_sur_le_5jours_de_la_semaine, $salaire_sur_le_6premieres_heures_du_overtime, $salaire_weekend, $salaire_dimanche_jourférié, $nbre_heures);
 
@@ -34,7 +34,7 @@ $solution = calculpay($salaire_par_heure, $salaire_sur_le_5jours_de_la_semaine, 
 </head>
 
 <body>
-    <form class=" formulaire" action="" method="get">
+    <form class=" formulaire" action="" method="post">
         <div class="formulaire_input">
             <label class="label" for=""> Salaire Horaire : </label>
             <input class="input" type="number" name="salaire_par_heure" id="salaire_par_heure" required>
@@ -59,14 +59,15 @@ $solution = calculpay($salaire_par_heure, $salaire_sur_le_5jours_de_la_semaine, 
             <label class="label" for=""> Nbre des heures prestées le dimanche et les jours fériés :</label>
             <input class="input" type="number" name="salaire_dimanche_jour_férié"  id="salaire_dimanche_jour_férié" required>
         </div>
-        <?php if(isset($solution) && $solution > 0): ?>
-            <span class="span">Votre salaire est de : <?= $solution ?> $</span>
-        <?php else: ?>
-            <span class="span">Erreur de calcul</span>
-       <?php endif; ?>
-   
         <button  type="submit" class="btn" >Resultat</button>
     </form>
+
+    <?php if(isset($solution) && $solution > 0): ?>
+            <span class="span">Votre salaire est de : <?= $solution ?> $</span>
+    <?php else: ?>
+      <span class="span">Erreur de calcul</span>
+    <?php endif; ?>
+
 </div>
 
 </body>
