@@ -24,7 +24,9 @@
     <div class="formAndListContainer">
 
         <div class="Formulaire">
-            <h4>Formulaire</h4>
+            <div class="formulaire-title">
+            <h3>Formulaire</h3>
+            </div>
         <form action="" method="post" class="form">
 
            <div class="input_name">
@@ -39,17 +41,17 @@
 
            <div class="input_countries">
 
-        <label for="" class="label">Selectionnez votre pays de residence</label>
-        <select name="countries" id="">
-            <option value=" Democratic republic of congo"> Democratic republic of congo</option>
-            <option value=" Republic of zambia"> Republic of zambia </option>
-            <option value="Republic of namibia">Republic of namibia</option>
-  
-        </select>
+            <label for="" class="label">Selectionnez votre pays de residence</label>
+            <select name="countries" id="">
+                <option value=" Democratic republic of congo"> Democratic republic of congo</option>
+                <option value=" Republic of zambia"> Republic of zambia </option>
+                <option value="Republic of namibia">Republic of namibia</option>
+    
+            </select>
            </div>
 
        <div class="input_newsLetter">
-            <label for="" class="label">Cliquez sur le buton ci-dessous pour vous abonnez à la news letter</label>
+            <label for="" class="label">Cliquez sur le button ci-dessous pour vous abonnez à la news letter</label>
             <input type="checkbox" name="newsLetter" id="">
        </div>
        <div  class="input_gender">
@@ -72,7 +74,7 @@
             <input type="file" name="upload" id="">
         </div>
 
-        <button type="submit">Submit</button>
+        <button class="btn" type="submit">Submit</button>
     </form>
         </div>
     </div>
