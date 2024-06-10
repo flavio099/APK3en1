@@ -41,7 +41,7 @@ $taux_un_dollar_en_franc = isset($_POST['taux_un_dollar_en_franc']) ? $_POST["ta
 
    </form> 
    <hr>
-   <h4>Votre montant vaut:  <?= number_format(conversion($typeDeConversion,$taux_un_dollar_en_franc,$montant),2) ?> selon le type de change effectué </h4>
+   <h4>Votre montant vaut:  <?= number_format(conversion($typeDeConversion,$taux_un_dollar_en_franc,$montant),2) ?> <?php if( $typeDeConversion== "dollar-franc"):?>fc <?php else:?>$ <?php endif?></h4>
    <hr>
 </body>
 </html>
