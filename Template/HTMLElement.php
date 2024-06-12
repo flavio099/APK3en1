@@ -6,7 +6,7 @@ class HTMLElement{
     protected array $attribut = [];
     protected string $content =" ";
 
-    public function __construct( $tagname,$content ){
+    public function __construct( $tagName,$content ){
 
         $this->tagName= $tagName;
         $this->content= $content;
@@ -25,6 +25,7 @@ class HTMLElement{
     }
 
     public function render() {
+
         $attrs = "";
         foreach ($this->attribut as $name => $value) {
             $attrs .= " $name=\"$value\"";
@@ -37,3 +38,4 @@ class HTMLElement{
 }
 
 ?>
+

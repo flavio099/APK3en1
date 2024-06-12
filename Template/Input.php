@@ -2,27 +2,25 @@
 require_once("HTMLElement.php");
 
 class Input extends HTMLElement {
-
-
-    public function __construct(string $tag ,string $attribut ,string $name ,string $contnu) {
-        $this->tag = $tag;
-        $this->attribut = $attribut;
-        $this->name = $name;
-        $this->contnu = $contnu;
-    }
-     private function tag($valeur){
-        
-         return "<{  $this->tag}>{ $valeur}</{  $this->tag}>";
-     }
-    function input(string $tag ,string $attribut ,string $name ,string $contnu){
-
-        return tag('<>');
-
-    }
+ 
     
-
+    public function __construct($content=" ") {
+    
+        parent::__construct("input",$content);
+    }
+ 
 }
 
+     $input= new Input(" ");
+     $input-> setAttribut("name","name");
+     $input-> setAttribut("value","flavien");
+     $input-> setAttribut("class","input");
+     $input-> setAttribut("type","text");
 
+     $input= new Input(" ");
+     $input-> setAttribut("name","password");
+     $input-> setAttribut("value","flavien");
+     $input-> setAttribut("class","input");
+     $input-> setAttribut("type","password");
 
 ?>
