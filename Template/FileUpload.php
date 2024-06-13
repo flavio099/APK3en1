@@ -12,8 +12,7 @@ class FileUpload extends HTMLElement {
 }
 
      $FileUpload= new FileUpload(" ");
-     $FileUpload-> setAttribut("name","name");
-     $FileUpload-> setAttribut("value","flavien");
+     $FileUpload-> setAttribut("name","FileUpload");
      $FileUpload-> setAttribut("class","FileUpload");
      $FileUpload-> setAttribut("type","file");
 

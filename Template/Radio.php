@@ -14,16 +14,17 @@ class Radio extends HTMLElement{
 
 }
 
-$radio = new Radio("");
-$radio ->setAttribut("type","radio");
-$radio ->setAttribut("name","gender");
-$radio ->setAttribut("value","male");
+$radioMale = new Radio("");
+$radioMale->setAttribut("type","radio");
+$radioMale ->setAttribut("name","gender");
+$radioMale ->setAttribut("checked","checked");
+$radioMale->setAttribut("value","male");
 
 
-$radio = new Radio("");
-$radio ->setAttribut("type","radio");
-$radio ->setAttribut("name","gender");
-$radio ->setAttribut("value","female");
+$radioFemale = new Radio("");
+$radioFemale ->setAttribut("type","radio");
+$radioFemale ->setAttribut("name","gender");
+$radioFemale->setAttribut("value","female");
 
 
 
