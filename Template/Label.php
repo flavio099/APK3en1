@@ -14,6 +14,8 @@ class Label extends HTMLElement{
 
 $labelGender = new Label("Quel est votre genre ?");
 $labelNewsletter = new Label("Cochez la case ci-dessous pour vous abonnez à notre news letter");
+$labelComentaire = new Label("Laissez un commentaire dans la zone de texte ci-dessous");
+
 
 
 ?>

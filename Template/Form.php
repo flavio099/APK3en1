@@ -62,6 +62,7 @@ $form->addChild($inputEmail);
 $form->addChild($inputPassword);
 $form->addChild($FileUpload);
 $form->addChild($select);
+$form->addChild($labelComentaire);
 $form->addChild($textarea);
 $form->addChild($labelNewsletter);
 $form->addChild($checkbox);

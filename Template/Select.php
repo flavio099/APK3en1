@@ -2,7 +2,7 @@
 require_once("HTMLElement.php");
 
 class Select extends HTMLElement{
-    public $children=[];
+  
     public function __construct($content){
 
         parent::__construct("select",$content);
@@ -12,6 +12,8 @@ class Select extends HTMLElement{
 
 $select = new Select(" ");
 $select ->setAttribut("name","select");
+$select ->setAttribut("class","select");
+
 
 
 ?>

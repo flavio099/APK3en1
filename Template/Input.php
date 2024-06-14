@@ -12,21 +12,24 @@ class Input extends HTMLElement {
 }
 
      $inputName = new Input(" ");
+     $inputName-> setAttribut("class","inputName");
      $inputName-> setAttribut("name","name");
      $inputName-> setAttribut("placeholder","Nom");
-     $inputName-> setAttribut("class","input");
+     $inputName-> setAttribut("required","required");
      $inputName-> setAttribut("type","text");
 
      $inputEmail = new Input(" ");
+     $inputEmail-> setAttribut("class","inputEmail");
      $inputEmail-> setAttribut("name","email");
      $inputEmail-> setAttribut("placeholder","Email");
-     $inputEmail-> setAttribut("class","input");
+     $inputEmail-> setAttribut("required","required");
      $inputEmail-> setAttribut("type","email");
 
      $inputPassword= new Input(" ");
+     $inputPassword-> setAttribut("class","inputPassword");
      $inputPassword-> setAttribut("name","password");
      $inputPassword-> setAttribut("placeholder","Password");
-     $inputPassword-> setAttribut("class","input");
+     $inputPassword-> setAttribut("required","required");
      $inputPassword-> setAttribut("type","password");
 
 ?>

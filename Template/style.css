@@ -1,0 +1,51 @@
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border: 3px solid red;
+    gap:10px;
+    width: 32.5%;
+}
+
+.inputName, .inputEmail , .inputPassword ,.textarea{
+
+    padding-left: 6px;
+    height: 30px;
+    width: 400px;
+    border: 1.5px solid navy;
+    
+}
+.FileUpload  {
+     padding-top: 6px;
+     padding-left: 6px;
+    height: 30px;
+    width: 403px;
+    border: 1.5px solid navy;
+
+}
+
+.select {
+     
+    height: 30px;
+    width: 411px;
+    border: 1.5px solid navy;
+
+}
+.btn{
+    height: 30px;
+    width: 100px; 
+    background:red;
+    border: 1.5px solid navy;
+    font-weight: bold;
+    color:white;
+}
