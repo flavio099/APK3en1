@@ -1,4 +1,5 @@
 <?php
+
  require_once("HTMLElement.php");
 
  class Button extends HTMLElement{
@@ -12,5 +13,6 @@
  $button= new Button("Submit");
  $button-> setAttribut("class","btn");
  $button-> setAttribut("type","submit");
+ 
 
 ?>
