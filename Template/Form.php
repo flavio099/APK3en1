@@ -54,8 +54,10 @@ class form {
 
 }
 
+
 $form = new form("form");
 $form ->setAttribute("method","post");
+$form ->setAttribute("enctype "," multipart/form-data ");
 $form ->setAttribute("class","form");
 $form->addChild($inputName);
 $form->addChild($inputEmail);
@@ -75,3 +77,4 @@ $form->addChild($button);
 
 
 ?>
+

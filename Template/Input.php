@@ -28,7 +28,7 @@ class Input extends HTMLElement {
      $inputPassword= new Input(" ");
      $inputPassword-> setAttribut("class","inputPassword");
      $inputPassword-> setAttribut("name","password");
-     $inputPassword-> setAttribut("placeholder","Password");
+     $inputPassword-> setAttribut("placeholder","Mot de paase");
      $inputPassword-> setAttribut("required","required");
      $inputPassword-> setAttribut("type","password");
 

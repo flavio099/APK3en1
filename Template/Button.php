@@ -12,6 +12,7 @@
 
  $button= new Button("Submit");
  $button-> setAttribut("class","btn");
+ $button-> setAttribut("name","submit");
  $button-> setAttribut("type","submit");
  
 

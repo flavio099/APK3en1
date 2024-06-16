@@ -14,6 +14,8 @@
   $checkbox= new Checkbox("");
   $checkbox->setAttribut("type","checkbox");
   $checkbox->setAttribut("name","checkbox");
+  $checkbox->setAttribut("value","je suis abonné à la newletter");
+
 
 
 ?>
