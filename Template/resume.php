@@ -4,7 +4,8 @@ setcookie("user","{$_SESSION["name"]}",time()+1);
 
 ?>
 
-<h1> Bonjour <?php echo ucwords($_COOKIE["user"]); ?> Bienvenue sur votre application </h1><br>
+ <h1> Bonjour <?php echo ucwords($_COOKIE["user"]); ?> Bienvenue sur votre application </h1><br> 
+
 <hr>
 
 <h3> Voici les informations que vous avez rensignez dans le formulaire :</h3> <br>
