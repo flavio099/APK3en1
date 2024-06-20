@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Vendor\\Crud\\": "src/"
+            "App\\": "Classe/"
         }
     },
     "authors": [
