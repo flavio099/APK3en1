@@ -1,0 +1,1 @@
+//cette page permet de supprimer le contact crée depuis la page add.php
